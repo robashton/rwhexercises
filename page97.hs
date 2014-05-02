@@ -32,4 +32,8 @@ mytakewhilerec fn xs = step xs []
 mytakewhile :: (a -> Bool) -> [a] -> [a]
 mytakewhile fn coll = foldr step [] coll
    where step x ys | fn x = x : ys
-                   | otherwise = [x]
+                   | otherwise = []
+
+
+
+
